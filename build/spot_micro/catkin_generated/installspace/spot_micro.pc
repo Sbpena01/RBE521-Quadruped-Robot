@@ -1,0 +1,8 @@
+prefix=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install
+
+Name: spot_micro
+Description: Description of spot_micro
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gtest/cmake_install.cmake")
+  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_control/cmake_install.cmake")
   include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_micro/cmake_install.cmake")
 
 endif()

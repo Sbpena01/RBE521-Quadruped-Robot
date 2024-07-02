@@ -1,0 +1,8 @@
+prefix=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel
+
+Name: spot_control
+Description: Description of spot_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

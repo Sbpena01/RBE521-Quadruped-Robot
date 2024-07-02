@@ -5,4 +5,4 @@ Description: Description of spot_micro
 Version: 0.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: gazebo_ros

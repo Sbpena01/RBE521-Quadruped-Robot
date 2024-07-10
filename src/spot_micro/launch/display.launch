@@ -1,9 +1,9 @@
 <launch>
-
-  <arg name="model" default="$(find spot_micro)/urdf/spot_micro.urdf"/>
+<!-- I had to change the location to my directory cause it wasn't working the other way -->
+  <arg name="model" default="/home/nddixon/RBE\ Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src/spot_micro/urdf/spot_micro.urdf"/>
+  <!-- <arg name="model" default="$(find spot_micro)/urdf/spot_micro.urdf"/> -->
   <arg name="gui" default="true" />
   <arg name="rvizconfig" default="$(find spot_micro)/rviz/urdf.rviz" />
-
   <param name="robot_description" command="$(find xacro)/xacro $(arg model)" />
 
   <node if="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
@@ -11,4 +11,6 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
 
+  <!-- Add a static transform publisher for the map frame -->
+  <node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0 0 0 0 0 0 map base_link 100" />
 </launch>

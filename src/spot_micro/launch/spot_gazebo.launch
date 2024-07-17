@@ -19,11 +19,14 @@
 
   <!-- Load the URDF into the ROS Parameter Server -->
   <param name="robot_description"
-    command="$(find xacro)/xacro --inorder '$(find spot_micro)/urdf/spot_micro.xacro'" />
+    command="$(find xacro)/xacro --inorder '$(find spot_micro)/urdf/spot_micro.urdf.xacro'" />
 
   <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
     args="-urdf -model spot_micro -param robot_description"/>
+
+
+  <!-- <node name="gazebo_ros_control" pkg="gazebo_ros_control" type="gazebo_ros_control" respawn="false" output="screen"/> -->
 
   <!-- ros_control rrbot launch file -->
   <!--include file="$(find rrbot_control)/launch/rrbot_control.launch" /-->

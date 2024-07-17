@@ -1,0 +1,8 @@
+prefix=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install
+
+Name: gazebo_dev
+Description: Description of gazebo_dev
+Version: 2.9.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

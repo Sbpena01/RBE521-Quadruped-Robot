@@ -16,7 +16,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/TF
       Name: TF
-      Value: false
+      Value: true
   Global Options:
     Fixed Frame: base_link
     Frame Rate: 30

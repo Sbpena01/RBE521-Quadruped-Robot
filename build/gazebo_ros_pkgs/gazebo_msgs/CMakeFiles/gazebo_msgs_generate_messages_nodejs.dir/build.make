@@ -91,10 +91,10 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ContactsState.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ContactState.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ContactsState.js: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from gazebo_msgs/ContactsState.msg"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ContactsState.msg -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg
 
@@ -107,41 +107,41 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkState.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Javascript code from gazebo_msgs/LinkState.msg"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkState.msg -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkStates.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/LinkStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from gazebo_msgs/LinkStates.msg"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkStates.msg -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ModelState.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from gazebo_msgs/ModelState.msg"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ModelState.msg -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ModelStates.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/ModelStates.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating Javascript code from gazebo_msgs/ModelStates.msg"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ModelStates.msg -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg
 
@@ -170,20 +170,20 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/WorldState.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg/WorldState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Javascript code from gazebo_msgs/WorldState.msg"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/WorldState.msg -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/msg
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyBodyWrench.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyBodyWrench.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/ApplyBodyWrench.srv
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyBodyWrench.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyBodyWrench.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyBodyWrench.js: /opt/ros/noetic/share/geometry_msgs/msg/Wrench.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/ApplyBodyWrench.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating Javascript code from gazebo_msgs/ApplyBodyWrench.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/ApplyBodyWrench.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
@@ -199,19 +199,19 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetLinkState.srv
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkState.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkState.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Javascript code from gazebo_msgs/GetLinkState.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetLinkState.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetPhysicsProperties.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetPhysicsProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetPhysicsProperties.srv
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetPhysicsProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ODEPhysics.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetPhysicsProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetPhysicsProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ODEPhysics.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating Javascript code from gazebo_msgs/GetPhysicsProperties.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetPhysicsProperties.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
@@ -228,9 +228,9 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SpawnModel.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SpawnModel.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SpawnModel.srv
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SpawnModel.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SpawnModel.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SpawnModel.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SpawnModel.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating Javascript code from gazebo_msgs/SpawnModel.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SpawnModel.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
@@ -256,20 +256,20 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkProperties.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetLinkProperties.srv
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating Javascript code from gazebo_msgs/SetLinkProperties.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetLinkProperties.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetModelState.srv
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ModelState.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating Javascript code from gazebo_msgs/SetModelState.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetModelState.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
@@ -280,20 +280,20 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkProperties.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetLinkProperties.srv
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetLinkProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating Javascript code from gazebo_msgs/GetLinkProperties.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetLinkProperties.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetModelState.srv
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/GetModelState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating Javascript code from gazebo_msgs/GetModelState.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/GetModelState.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
@@ -304,30 +304,30 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetLinkState.srv
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkState.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/LinkState.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLinkState.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Generating Javascript code from gazebo_msgs/SetLinkState.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetLinkState.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetPhysicsProperties.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetPhysicsProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetPhysicsProperties.srv
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetPhysicsProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ODEPhysics.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetPhysicsProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetPhysicsProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg/ODEPhysics.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Generating Javascript code from gazebo_msgs/SetPhysicsProperties.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetPhysicsProperties.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetJointTrajectory.srv
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectoryPoint.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetJointTrajectory.js: /opt/ros/noetic/share/trajectory_msgs/msg/JointTrajectory.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Generating Javascript code from gazebo_msgs/SetJointTrajectory.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetJointTrajectory.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv
 
@@ -339,10 +339,10 @@ gazebo_ros_pkgs/gazebo_msgs/CMakeFiles/gazebo_msgs_generate_messages_nodejs: /ho
 
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetLightProperties.srv
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/std_msgs/msg/ColorRGBA.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/std_msgs/msg/ColorRGBA.msg
+/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
 /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv/SetLightProperties.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Generating Javascript code from gazebo_msgs/SetLightProperties.srv"
 	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/srv/SetLightProperties.srv -Igazebo_msgs:/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/gazebo_ros_pkgs/gazebo_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Isensor_msgs:/opt/ros/noetic/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/noetic/share/trajectory_msgs/cmake/../msg -p gazebo_msgs -o /home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel/share/gennodejs/ros/gazebo_msgs/srv

@@ -7,4 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build'
+export PWD='/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build'

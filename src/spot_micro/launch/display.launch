@@ -1,6 +1,6 @@
 <launch>
 <!-- I had to change the location to my directory cause it wasn't working the other way -->
-  <arg name="model" default="/home/nddixon/RBE\ Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src/spot_micro/urdf/spot_micro.urdf"/>
+  <arg name="model" default="/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src/spot_micro/urdf/spot_micro.urdf"/>
   <!-- <arg name="model" default="$(find spot_micro)/urdf/spot_micro.urdf"/> -->
   <arg name="gui" default="true" />
   <arg name="rvizconfig" default="$(find spot_micro)/rviz/urdf.rviz" />

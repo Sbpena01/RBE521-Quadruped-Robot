@@ -1,4 +1,4 @@
-prefix=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel
+prefix=/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/devel
 
 Name: spot_micro
 Description: Description of spot_micro

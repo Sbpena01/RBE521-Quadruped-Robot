@@ -1,8 +1,0 @@
-prefix=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel
-
-Name: spot_mirco_rviz
-Description: Description of spot_mirco_rviz
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

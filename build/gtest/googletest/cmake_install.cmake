@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -1,0 +1,32 @@
+<launch>
+    <!-- Define parameters for URDF -->
+    <arg name="model" default="/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src/spot_micro/urdf/spot_micro.urdf"/>
+    <arg name="gui" default="true" />
+    <arg name="rvizconfig" default="$(find spot_micro)/rviz/urdf.rviz" />
+
+    <param name="robot_description" command="$(find xacro)/xacro '$(arg model)'" />
+    <param name="body_length" value="1.0" />
+    <param name="lidar_length" value="0.5" />
+    <param name="rear_length" value="0.3" />
+    <param name="front_length" value="0.4" />
+    <param name="body_height" value="0.2" />
+
+    <!-- Start the joint state publisher -->
+    <!-- <node if="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" /> -->
+    <node unless="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+    <!-- Start the robot state publisher -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <!-- Add a static transform publisher for the map frame -->
+    <node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0 0 0 0 0 0 map base_link 100" />
+
+    <!-- Launch RViz with the specified configuration file -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true" />
+
+    <!-- Start the joint control server -->
+    <node name="joint_control_server" pkg="spot_control" type="joint_control_server.py" output="screen"/>
+    
+    <!-- Start the joint control client -->
+    <node name="joint_control_client" pkg="spot_control" type="joint_control_client.py" output="screen"/>
+</launch>

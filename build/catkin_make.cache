@@ -1,2 +1,2 @@
-spot_micro
--DCATKIN_DEVEL_PREFIX=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/devel -DCMAKE_INSTALL_PREFIX=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install -G Unix Makefiles
+spot_control:spot_micro
+-DCATKIN_DEVEL_PREFIX=/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/devel -DCMAKE_INSTALL_PREFIX=/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install -G Unix Makefiles

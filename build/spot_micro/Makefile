@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src
+CMAKE_SOURCE_DIR = /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build
+CMAKE_BINARY_DIR = /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_micro/CMakeFiles/progress.marks
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles 0
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/CMakeFiles /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_micro/CMakeFiles/progress.marks
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/clean
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/preinstall
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/preinstall
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/rule
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/rule
 .PHONY : spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ _catkin_empty_exported_target: spot_micro/CMakeFiles/_catkin_empty_exported_targ
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/build.make spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/build
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/build.make spot_micro/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,0 +1,6 @@
+# Request
+float64[] joint_angles  # A list of target angles for the joints of all legs
+---
+# Response
+bool success  # Whether the joint commands were successfully executed
+string message

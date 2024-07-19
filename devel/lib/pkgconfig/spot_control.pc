@@ -1,0 +1,8 @@
+prefix=/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/devel
+
+Name: spot_control
+Description: Description of spot_control
+Version: 0.0.0
+Cflags: -I/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime roscpp rospy std_msgs

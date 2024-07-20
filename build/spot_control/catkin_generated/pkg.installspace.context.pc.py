@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "spot_control"
-PROJECT_SPACE_DIR = "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install"
+PROJECT_SPACE_DIR = "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install"
 PROJECT_VERSION = "0.0.0"

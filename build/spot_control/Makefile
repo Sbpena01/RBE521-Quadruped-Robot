@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src
+CMAKE_SOURCE_DIR = /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build
+CMAKE_BINARY_DIR = /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,6 +68,27 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -80,28 +101,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -113,16 +112,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
 
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # Special rule for the target test
 test:
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_control/CMakeFiles/progress.marks
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/CMakeFiles 0
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/CMakeFiles /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_control/CMakeFiles/progress.marks
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/clean
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,18 +154,693 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/preinstall
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/preinstall
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+spot_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_nodejs: spot_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+tf2_msgs_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+.PHONY : tf2_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_lisp: spot_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_lisp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+.PHONY : tf2_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_lisp: spot_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+.PHONY : actionlib_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_nodejs: spot_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+.PHONY : actionlib_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_py: spot_control/CMakeFiles/actionlib_generate_messages_py.dir/rule
+
+.PHONY : actionlib_generate_messages_py
+
+# fast build rule for target.
+actionlib_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_generate_messages_py.dir/build.make spot_control/CMakeFiles/actionlib_generate_messages_py.dir/build
+.PHONY : actionlib_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_nodejs: spot_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+
+.PHONY : actionlib_generate_messages_nodejs
+
+# fast build rule for target.
+actionlib_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+.PHONY : actionlib_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_cpp: spot_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+.PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_eus: spot_control/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_generate_messages_eus
+
+# fast build rule for target.
+actionlib_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_generate_messages_eus.dir/build.make spot_control/CMakeFiles/actionlib_generate_messages_eus.dir/build
+.PHONY : actionlib_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: spot_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make spot_control/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_py: spot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_py
+
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make spot_control/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_py: spot_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make spot_control/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_py: spot_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_py
+
+# fast build rule for target.
+tf2_msgs_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make spot_control/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+.PHONY : tf2_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_cpp: spot_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_nodejs: spot_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geometry_msgs_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+.PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_eus: spot_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_eus
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make spot_control/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+.PHONY : actionlib_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: spot_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: spot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make spot_control/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_cpp: spot_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_cpp
+
+# fast build rule for target.
+tf2_msgs_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+.PHONY : tf2_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: spot_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_nodejs: spot_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: spot_control/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make spot_control/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_lisp: spot_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: spot_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+actionlib_msgs_generate_messages_py: spot_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+
+.PHONY : actionlib_msgs_generate_messages_py
+
+# fast build rule for target.
+actionlib_msgs_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make spot_control/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+.PHONY : actionlib_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_cpp: spot_control/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+
+.PHONY : actionlib_generate_messages_cpp
+
+# fast build rule for target.
+actionlib_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+.PHONY : actionlib_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_nodejs: spot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: spot_control/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/roscpp_generate_messages_py.dir/build.make spot_control/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_lisp: spot_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+tf2_msgs_generate_messages_eus: spot_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+
+.PHONY : tf2_msgs_generate_messages_eus
+
+# fast build rule for target.
+tf2_msgs_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make spot_control/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+.PHONY : tf2_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_eus: spot_control/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/roscpp_generate_messages_eus.dir/build.make spot_control/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: spot_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make spot_control/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: spot_control/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_lisp: spot_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/build.make spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_cpp: spot_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_cpp: spot_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_cpp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+actionlib_generate_messages_lisp: spot_control/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+
+.PHONY : actionlib_generate_messages_lisp
+
+# fast build rule for target.
+actionlib_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+.PHONY : actionlib_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : spot_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: spot_control/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make spot_control/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_eus: spot_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_eus
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make spot_control/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+.PHONY : controller_manager_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : spot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: spot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make spot_control/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_nodejs: spot_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+.PHONY : controller_manager_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_nodejs: spot_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+sensor_msgs_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+.PHONY : sensor_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+.PHONY : spot_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_py: spot_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_py
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_py/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make spot_control/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+.PHONY : controller_manager_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: spot_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make spot_control/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+spot_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f CMakeFiles/Makefile2 spot_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+.PHONY : spot_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geometry_msgs_generate_messages_eus: spot_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geometry_msgs_generate_messages_eus
+
+# fast build rule for target.
+geometry_msgs_generate_messages_eus/fast:
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(MAKE) -f spot_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make spot_control/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+.PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Help Target
 help:
@@ -174,12 +849,57 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... tf2_msgs_generate_messages_nodejs"
+	@echo "... tf2_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_nodejs"
+	@echo "... actionlib_generate_messages_py"
+	@echo "... actionlib_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... tf2_msgs_generate_messages_py"
+	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... actionlib_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... install/local"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... tf2_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... geometry_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... actionlib_msgs_generate_messages_py"
+	@echo "... actionlib_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... rebuild_cache"
+	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... sensor_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... sensor_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... sensor_msgs_generate_messages_cpp"
+	@echo "... install"
+	@echo "... controller_manager_msgs_generate_messages_cpp"
+	@echo "... actionlib_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_eus"
 	@echo "... test"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... sensor_msgs_generate_messages_nodejs"
+	@echo "... controller_manager_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... geometry_msgs_generate_messages_eus"
 .PHONY : help
 
 
@@ -191,6 +911,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

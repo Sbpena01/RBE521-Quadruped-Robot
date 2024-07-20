@@ -7,4 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build'
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig'
+export PWD='/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build'
+export PYTHONPATH='/opt/ros/noetic/lib/python3/dist-packages'
+export ROS_PACKAGE_PATH='/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src:/opt/ros/noetic/share'

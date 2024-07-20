@@ -1,8 +1,8 @@
-# Install script for directory: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/spot_micro
+# Install script for directory: /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src/spot_micro
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_micro/catkin_generated/installspace/spot_micro.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_micro/catkin_generated/installspace/spot_micro.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_micro/cmake" TYPE FILE FILES
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_micro/catkin_generated/installspace/spot_microConfig.cmake"
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_micro/catkin_generated/installspace/spot_microConfig-version.cmake"
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_micro/catkin_generated/installspace/spot_microConfig.cmake"
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_micro/catkin_generated/installspace/spot_microConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_micro" TYPE FILE FILES "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/spot_micro/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spot_micro" TYPE FILE FILES "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src/spot_micro/package.xml")
 endif()
 

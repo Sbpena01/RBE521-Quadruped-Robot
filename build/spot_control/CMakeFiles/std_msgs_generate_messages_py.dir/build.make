@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src
+CMAKE_SOURCE_DIR = /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build
+CMAKE_BINARY_DIR = /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build
 
 # Utility rule file for std_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/build: std_msgs_genera
 .PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/build
 
 spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_control && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_control && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/depend:
-	cd /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src/spot_control /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_control /home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src/spot_control /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_control /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : spot_control/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 

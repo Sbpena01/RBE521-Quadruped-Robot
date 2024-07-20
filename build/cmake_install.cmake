@@ -1,8 +1,8 @@
-# Install script for directory: /home/sbpena01/GitHub/RBE521-Quadruped-Robot/src
+# Install script for directory: /home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,96 +49,90 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/_setup_util.py")
+   "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install" TYPE PROGRAM FILES "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install" TYPE PROGRAM FILES "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/env.sh")
+   "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install" TYPE PROGRAM FILES "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install" TYPE PROGRAM FILES "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/setup.bash;/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/local_setup.bash")
+   "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/setup.bash;/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install" TYPE FILE FILES
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/setup.bash"
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install" TYPE FILE FILES
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/setup.bash"
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/setup.sh;/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/local_setup.sh")
+   "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/setup.sh;/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install" TYPE FILE FILES
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/setup.sh"
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install" TYPE FILE FILES
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/setup.sh"
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/setup.zsh;/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/local_setup.zsh")
+   "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/setup.zsh;/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install" TYPE FILE FILES
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/setup.zsh"
-    "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install" TYPE FILE FILES
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/setup.zsh"
+    "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install/.rosinstall")
+   "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install" TYPE FILE FILES "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install" TYPE FILE FILES "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gtest/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_dev/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_ros_pkgs/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_msgs/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_ros/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_plugins/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/gazebo_ros_pkgs/gazebo_ros_control/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_control/cmake_install.cmake")
-  include("/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/spot_micro/cmake_install.cmake")
+  include("/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/gtest/cmake_install.cmake")
+  include("/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_control/cmake_install.cmake")
+  include("/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/spot_micro/cmake_install.cmake")
 
 endif()
 
@@ -150,5 +144,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/sbpena01/GitHub/RBE521-Quadruped-Robot/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

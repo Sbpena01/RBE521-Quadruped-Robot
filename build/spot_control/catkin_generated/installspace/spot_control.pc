@@ -1,4 +1,4 @@
-prefix=/home/sbpena01/GitHub/RBE521-Quadruped-Robot/install
+prefix=/home/nddixon/RBE_Grad/Legged_Robotics/project/RBE521-Quadruped-Robot/install
 
 Name: spot_control
 Description: Description of spot_control

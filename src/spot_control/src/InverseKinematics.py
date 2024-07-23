@@ -2,18 +2,19 @@
 
 import rospy
 import math
+import numpy as np
 from std_msgs.msg import Float64MultiArray
 
 
 
 def IK(x, y, z):
     # I think these are the correct leg lengths
-    l1 = 20
-    l2 = 80
-    l3 = 80
+    l1 = 2.0
+    l2 = 8.0
+    l3 = 8.0
 
     # adjust the coordinate system
-    x = -x
+    # x = -x
 
     D = math.sqrt((z**2 + y**2) - l1**2)
     G = math.sqrt(D**2 + x**2)
@@ -27,7 +28,8 @@ def IK(x, y, z):
 
     omega = (omega) - (math.pi / 2)
     if omega < -0.55 or omega > 0.55:
-        rospy.loginfo('Shoulder angle out of range')
+        # rospy.loginfo('Shoulder angle out of range')
+        pass
     
     theta = (theta)
     if theta < -2.67 or theta > 1.55:
@@ -46,6 +48,8 @@ def front_left_leg_callback(msg):
     x = msg.data[0]
     y = msg.data[1]
     z = msg.data[2]
+    # rospy.loginfo("%f, %f, %f", x, y, z)
+    [x, y, z] = transform(x, y, z)
 
     joint_angles = IK(x, y, z)
     joint_angles_msg = Float64MultiArray()
@@ -90,22 +94,29 @@ def back_right_leg_callback(msg):
     #rospy.loginfo('Successfully published BR angles: %s', joint_angles_msg.data)
     back_right_leg_pub.publish(joint_angles_msg)
 
+def transform(Px, Py, Pz):
+    current_frame = np.array([[1, 0, 0, Px], [0, 1, 0, Py], [0, 0, 1, Pz], [0, 0, 0, 1]])
+    transformation = np.array([[1, 0, 0, 0],[0, 0, 1, 0],[0, -1, 0, -0.0],[0, 0, 0, 1]])
+    new_frame = np.matmul(current_frame, transformation)
+    rospy.loginfo("Transformed coords: %f, %f, %f", new_frame[0][3], new_frame[1][3], new_frame[2][3])
+    return [new_frame[0][3], new_frame[1][3], new_frame[2][3]]
+
 if __name__ == '__main__':
     try:
         rospy.init_node('inverse_kinematics', anonymous=True)
         rospy.loginfo('Inverse kinematics running.')
 
         # Publish the joint angles to the corresponding legs
-        front_left_leg_pub = rospy.Publisher('front_left_leg_angles', Float64MultiArray, queue_size=10)
-        back_left_leg_pub = rospy.Publisher('back_left_leg_angles', Float64MultiArray, queue_size=10)
-        front_right_leg_pub = rospy.Publisher('front_right_leg_angles', Float64MultiArray, queue_size=10)
-        back_right_leg_pub = rospy.Publisher('back_right_leg_angles', Float64MultiArray, queue_size=10)
+        front_left_leg_pub = rospy.Publisher('/front_left_leg_angles', Float64MultiArray, queue_size=10)
+        back_left_leg_pub = rospy.Publisher('/back_left_leg_angles', Float64MultiArray, queue_size=10)
+        front_right_leg_pub = rospy.Publisher('/front_right_leg_angles', Float64MultiArray, queue_size=10)
+        back_right_leg_pub = rospy.Publisher('/back_right_leg_angles', Float64MultiArray, queue_size=10)
 
         # Subscribe to the target foot positions from the trajectories
         rospy.Subscriber('/front_left_leg_target', Float64MultiArray, front_left_leg_callback)
-        rospy.Subscriber('/back_left_leg_target', Float64MultiArray, back_left_leg_callback)
-        rospy.Subscriber('/front_right_leg_target', Float64MultiArray, front_right_leg_callback)
-        rospy.Subscriber('/back_right_leg_target', Float64MultiArray, back_right_leg_callback)
+        # rospy.Subscriber('/back_left_leg_target', Float64MultiArray, back_left_leg_callback)
+        # rospy.Subscriber('/front_right_leg_target', Float64MultiArray, front_right_leg_callback)
+        # rospy.Subscriber('/back_right_leg_target', Float64MultiArray, back_right_leg_callback)
 
         rospy.spin()
 

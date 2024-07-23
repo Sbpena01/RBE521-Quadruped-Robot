@@ -57,9 +57,9 @@ spotmicroai:
 #PID values for our Joints
 #feel free to change them
   gazebo_ros_control/pid_gains:
-    front_left_shoulder: {p: 100.0, i: 0.01, d: 10.0}
-    front_left_leg: {p: 100.0, i: 0.01, d: 10.0}
-    front_left_foot: {p: 100.0, i: 0.01, d: 10.0}
+    front_left_shoulder: {p: 100.0, i: 0.01, d: 5.0}
+    front_left_leg: {p: 100.0, i: 0.01, d: 5.0}
+    front_left_foot: {p: 100.0, i: 0.01, d: 5.0}
     front_right_shoulder: {p: 100.0, i: 0.01, d: 10.0}
     front_right_leg: {p: 100.0, i: 0.01, d: 10.0}
     front_right_foot: {p: 100.0, i: 0.01, d: 10.0}

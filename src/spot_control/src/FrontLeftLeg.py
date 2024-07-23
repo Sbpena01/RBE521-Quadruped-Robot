@@ -6,8 +6,8 @@ import numpy as np
 from std_msgs.msg import Float64MultiArray, Float64
 
 shoulder = 0.0
-foot = 0.0
-leg = 0.0
+foot = np.radians(90)
+leg = np.radians(-30)
 
 def updateJointCallback(msg):
     global shoulder, leg, foot
@@ -31,7 +31,6 @@ def setJoints():
         shoulder_pub.publish(shoulder)
         leg_pub.publish(leg)
         foot_pub.publish(foot)
-        rospy.loginfo("info message")
         
         rate.sleep()
 

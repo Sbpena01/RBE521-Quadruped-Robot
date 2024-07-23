@@ -53,13 +53,36 @@ def generateTrajectory():
     Pz_hw = np.zeros((4, len(ts_arg_hw[0])))
     Py_hw = np.zeros((4, len(ts_arg_hw[0])))
 
+    # for i in range(4):
+    #     for j in range(len(ts_arg_hw[0])):
+    #         t_s[i, j, :] = [1, ts_arg_hw[i, j], ts_arg_hw[i, j]**2, ts_arg_hw[i, j]**3, ts_arg_hw[i, j]**4, ts_arg_hw[i, j]**5]
+    #         ts_vec = t_s[i, j, :]
+    #         if ts_arg_hw[i, j] < beta_hw * T_hw:
+    #             Px_hw[i, j] = np.dot(a_x_hw, ts_vec)
+    #             Pz_hw[i, j] = np.dot(a_z_hw, ts_vec)
+    #         else:
+    #             Px_hw[i, j] = -vHW * (ts_arg_hw[i, j] - beta_hw * T_hw) / equalizer + L_hw
+    #             Pz_hw[i, j] = 0
+    #         Py_hw[i, j] = -w * np.sin(2 * np.pi * (ts_arg_hw[i, j] - T_hw) / T_hw)
+
+    a_x_hw = np.transpose(quintic_solve(np.transpose([-L_hw, L_hw, -3.3334, -3.3334, 0, 0]),T_hw*beta_hw))
+    a_z_hw1 = np.transpose(quintic_solve(np.transpose([0, H, 0, 0, 0, 0]),T_hw*beta_hw*0.5))
+    a_z_hw2 = np.transpose(quintic_solve(np.transpose([H, 0, 0, 0, 0, 0]),T_hw*beta_hw*0.5))
+
     for i in range(4):
         for j in range(len(ts_arg_hw[0])):
-            t_s[i, j, :] = [1, ts_arg_hw[i, j], ts_arg_hw[i, j]**2, ts_arg_hw[i, j]**3, ts_arg_hw[i, j]**4, ts_arg_hw[i, j]**5]
+            val = ts_arg_hw[i, j]
+            t_s[i, j, :] = [1, val, val**2, val**3, val**4, val**5]
             ts_vec = t_s[i, j, :]
             if ts_arg_hw[i, j] < beta_hw * T_hw:
                 Px_hw[i, j] = np.dot(a_x_hw, ts_vec)
-                Pz_hw[i, j] = np.dot(a_z_hw, ts_vec)
+                if ts_arg_hw[i,j] < beta_hw * T_hw * 0.5:
+                    Pz_hw[i, j] = np.dot(a_z_hw1, ts_vec)
+                else:
+                    val = ts_arg_hw[i, j] - beta_hw* T_hw *0.5
+                    t_s[i, j, :] = [1, val, val**2, val**3, val**4, val**5]
+                    ts_vec = t_s[i, j, :]
+                    Pz_hw[i, j] = np.dot(a_z_hw2, ts_vec)
             else:
                 Px_hw[i, j] = -vHW * (ts_arg_hw[i, j] - beta_hw * T_hw) / equalizer + L_hw
                 Pz_hw[i, j] = 0

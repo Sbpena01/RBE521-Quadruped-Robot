@@ -6,8 +6,8 @@ import numpy as np
 from std_msgs.msg import Float64MultiArray, Float64
 
 shoulder = 0.0
+leg = np.radians(-45)
 foot = np.radians(90)
-leg = np.radians(-30)
 
 def updateJointCallback(msg):
     global shoulder, leg, foot

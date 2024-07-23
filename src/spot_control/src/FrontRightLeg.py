@@ -6,8 +6,8 @@ import numpy as np
 from std_msgs.msg import Float64MultiArray, Float64
 
 shoulder = 0.0
-foot = 0.0
-leg = 0.0
+leg = np.radians(-45)
+foot = np.radians(90)
 
 def updateJointCallback(msg):
     global shoulder, leg, foot
@@ -36,7 +36,7 @@ def setJoints():
 if __name__ == '__main__':
     try:
         rospy.init_node("front_right_leg_joints", anonymous=True)
-        rospy.loginfo('Running joint controller for front left leg')
+        rospy.loginfo('Running joint controller for front right leg')
         # For this example, I just have the starting angle be whatever is provided from command
         # line arguement. In the future, we could add a config file that has starting angles for
         # each joint (prob 0 for home config).

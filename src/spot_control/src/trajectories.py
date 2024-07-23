@@ -386,15 +386,15 @@ def runTrajectory():
 
         fr_msg = Float64MultiArray()
         fr_msg.data = [Px2[i], Py2[i], Pz2[i]]
-        # fr_pub.publish(fr_msg)
+        fr_pub.publish(fr_msg)
 
         bl_msg = Float64MultiArray()
         bl_msg.data = [Px3[i], Py3[i], Pz3[i]]
-        # bl_pub.publish(bl_msg)
+        bl_pub.publish(bl_msg)
 
         br_msg = Float64MultiArray()
         br_msg.data = [Px4[i], Py4[i], Pz4[i]]
-        # br_pub.publish(br_msg)
+        br_pub.publish(br_msg)
 
         i += 1
         time.sleep(0.1)

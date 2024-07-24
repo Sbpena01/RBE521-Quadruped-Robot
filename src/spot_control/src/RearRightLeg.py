@@ -3,7 +3,8 @@
 import rospy
 import sys
 import numpy as np
-from std_msgs.msg import Float64MultiArray, Float64
+from std_msgs.msg import Float64MultiArray, Float64, Header
+from sensor_msgs.msg import JointState
 
 shoulder = 0.0
 leg = np.radians(-45)
@@ -24,6 +25,7 @@ def setJoints():
                               Float64, queue_size=10)
     foot_pub = rospy.Publisher('/spotmicroai/rear_right_foot_position_controller/command',
                                Float64, queue_size=10)
+    rviz_pub = rospy.Publisher('joint_states', JointState, queue_size=10)
     rospy.Subscriber('/rear_right_leg_angles', Float64MultiArray, updateJointCallback)  # TODO replace topic
 
     rate = rospy.Rate(10) # 10 Hz
@@ -31,6 +33,12 @@ def setJoints():
         shoulder_pub.publish(shoulder)
         leg_pub.publish(leg)
         foot_pub.publish(foot)
+        joint_state_msg = JointState()
+        joint_state_msg.header = Header()
+        joint_state_msg.header.stamp = rospy.Time.now()
+        joint_state_msg.name = ["rear_right_shoulder", "rear_right_leg", "rear_right_foot"]
+        joint_state_msg.position = [shoulder, leg, foot]
+        rviz_pub.publish(joint_state_msg)
         rate.sleep()
 
 if __name__ == '__main__':

@@ -97,7 +97,7 @@ def back_right_leg_callback(msg):
 
 def transform(Px, Py, Pz):
     current_frame = np.transpose(np.array([Px, Py, Pz, 1]))
-    transformation = np.array([[-1, 0, 0, 0], [0, -1, 0, 0],[0, 0, 1, -10],[0, 0, 0, 1]])
+    transformation = np.array([[-1, 0, 0, 0], [0, -1, 0, 0],[0, 0, 1, -12],[0, 0, 0, 1]])
     new_frame = np.matmul(transformation, current_frame)
     # print(new_frame)
     # rospy.loginfo("Transformed coords: %f, %f, %f", new_frame[0], new_frame[1], new_frame[2])

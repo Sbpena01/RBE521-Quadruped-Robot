@@ -12,7 +12,7 @@ def IK(x, y, z):
     l1 = 2.0
     l2 = 8.0
     l3 = 8.0
-
+    # rospy.loginfo("1: %f, l1: %f", z**2 + y**2, l1**2)
     D = math.sqrt((z**2 + y**2) - l1**2)
     G = math.sqrt(D**2 + x**2)
 
@@ -36,7 +36,7 @@ def IK(x, y, z):
     # if phi < -2.6 or phi > 0.1:
     #     rospy.loginfo('Ankle angle out of range')
 
-    joint_angles = [-omega, -theta, -phi]
+    joint_angles = [-omega, -theta, phi]
 
     return joint_angles
 
@@ -97,7 +97,7 @@ def back_right_leg_callback(msg):
 
 def transform(Px, Py, Pz):
     current_frame = np.transpose(np.array([Px, Py, Pz, 1]))
-    transformation = np.array([[-1, 0, 0, 0], [0, 1, 0, 2.0],[0, 0, -1, 8*math.sqrt(2)],[0, 0, 0, 1]])
+    transformation = np.array([[-1, 0, 0, 0], [0, -1, 0, 0],[0, 0, 1, -10],[0, 0, 0, 1]])
     new_frame = np.matmul(transformation, current_frame)
     # print(new_frame)
     # rospy.loginfo("Transformed coords: %f, %f, %f", new_frame[0], new_frame[1], new_frame[2])

@@ -26,7 +26,7 @@ def generateTrajectory():
     t_end_hw = 20
     T_hw = 4  # seconds
     iter_hw = 1
-    t_hw = np.linspace(0, T_hw * (iter_hw + 0.75), int((T_hw * (iter_hw + 0.75) - 0) * 100))
+    t_hw = np.linspace(0, T_hw * (iter_hw + 0.75), int((T_hw * (iter_hw + 0.75) - 0) * 100)) / 2
 
     stride_length_hw = 10  # cm
     L_hw = stride_length_hw / 2

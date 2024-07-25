@@ -1,7 +1,7 @@
 # RBE521-Quadruped-Robot
 This repository contains all of the coding efforts required for the final project for RBE521 Legged Robotics. Contributors include Scott Pena, Tim DeMaro, and Nate Dixon.
 # How to run our code
-NOTE: Make sure roscore is running. \n
+NOTE: Make sure roscore is running.\
 To launch Spot in Gazebo, run roslaunch spot_micro spot_ai_gazebo.launch
 To launch Spot in RViz, run roslaunch spot_micro rviz_spot.launch
 Run the following nodes in their own terminal:
